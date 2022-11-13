@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+import 'package:four_app/add_card/add_card_controller.dart';
 import 'package:four_app/home/home_controller.dart';
 import 'package:get/get.dart';
 
@@ -11,6 +12,7 @@ Future getControllers() async {
 
   //Controllers
   Get.create(() => HomeController(), permanent: false);
+  Get.create(() => AddCardController(), permanent: false);
 
   lateInitializers.add(
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]),

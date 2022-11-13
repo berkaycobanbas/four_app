@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:four_app/home/home_screen.dart';
+import 'package:four_app/add_card/add_card_screen.dart';
 import 'package:four_app/routing/get_controller.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomeScreen(),
+      home: AddCardScreen(),
     );
   }
 }
